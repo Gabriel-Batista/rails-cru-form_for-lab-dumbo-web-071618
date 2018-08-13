@@ -1,0 +1,10 @@
+<%= form_for @genre do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :songs %>
+    <%= f.text_field :songs%><br>
+    <%= f.label :artists %>
+    <%= f.text_field :artists %><br>
+    <%= f.submit "Update Genre" %>
+<% end %>

@@ -1,0 +1,12 @@
+<h1>New Genre Form</h1>
+
+<%= form_for :genre, url: "/genres" do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :songs %>
+    <%= f.text_field :songs%><br>
+    <%= f.label :artists %>
+    <%= f.text_field :artists %><br>
+    <%= f.submit "Create Genre" %>
+<% end %>
